@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(136, 136, 171), rgb(173, 194, 53));
+    padding: 10px;
+}
+
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: black;
+    margin:100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+    h2{
+        color: yellow;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px ;
+    }
+
+    /* img{
+        margin-left: px;
+    } */
+}
+
+.row{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background: rgb(4, 4, 4);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    border: 1px solid yellow;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+     background: transparent; 
+    padding: 10px;
+    color: yellow;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: ;
+    background: yellow; 
+    color: black;
+    cursor: pointer;
+    padding: 16px 50px;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select:none;
+    cursor: pointer;
+    color: yellow;
+    position: relative;
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./asset/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+.checked{
+    /* color: black; */
+    text-decoration: line-through;
+}
+
+.checked::before{
+    background-image: url(./asset/png-clipart-yellow-and-white-check-button-logo-symbol-yellow-orange-clear-tick-orange-data.png);
+   
+}
+
+span{
+    color: yellow;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width:40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+span:hover{
+    background-color: yellow;
+    color: black ;
+    border-radius: 40px;
+}
+
+
+
